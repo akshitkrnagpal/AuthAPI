@@ -1,0 +1,20 @@
+{
+  "name": "AuthAPI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:AkshitKrNagpal/AuthAPI.git",
+  "author": "Akshit Kr Nagpal <akshitkrnagpal@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "crypto": "^1.0.1",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.2.0",
+    "mongoose": "^5.0.7",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.1",
+    "passport-local": "^1.0.0"
+  }
+}
