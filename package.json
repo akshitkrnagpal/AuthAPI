@@ -5,6 +5,9 @@
   "repository": "git@github.com:AkshitKrNagpal/AuthAPI.git",
   "author": "Akshit Kr Nagpal <akshitkrnagpal@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "npx nodemon index.js"
+  },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
@@ -16,5 +19,8 @@
     "passport": "^0.4.0",
     "passport-jwt": "^3.0.1",
     "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
   }
 }
