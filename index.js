@@ -16,13 +16,13 @@ app.use( function (req, res, next) {
 	next();
 });
 
-mongoose.connect(config.database);
+mongoose.connect(config.DATABASE_URL);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 router(app);
 
-const server = app.listen(config.port);
+const server = app.listen(config.PORT);
 
 module.exports = server;

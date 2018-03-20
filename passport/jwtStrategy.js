@@ -7,7 +7,7 @@ const config = require('../config');
 
 const jwtOptions = {
 	jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-	secretOrKey: config.secret,
+	secretOrKey: config.SECRET,
 };
 
 const jwtLogin = new JwtStrategy(jwtOptions, function(payload, callback) {

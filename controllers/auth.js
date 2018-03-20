@@ -4,7 +4,7 @@ const User = require('../models/user');
 const config = require('../config');
 
 function generateToken(user) {
-	return jwt.sign(user, config.secret, {
+	return jwt.sign(user, config.SECRET, {
 		expiresIn: 10080,
 	})
 }
