@@ -14,12 +14,13 @@ jobs:
       with:
         node-version: 12
     - run: npx npm-check-updates -u
-    - run: yarn install
+    - run: npm install
     - uses: actions-js/push@v1.2
       with: 
         github_token: ${{ secrets.GITHUB_TOKEN }}
         author_email: akshitkrnagpal@gmail.com
         author_name: akshitkrnagpal
         message: Updated Dependencies
+        branch: auth
       
   
